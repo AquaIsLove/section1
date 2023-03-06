@@ -1,0 +1,49 @@
+.page {
+  width: min(100% - 2rem, 1200px);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline: auto;
+}
+
+.section{
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.section_color_orange {
+  background-color: darkorange;
+}
+
+.cards{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cards__one-car{
+  display: block;
+  box-sizing: border-box;
+  background-color: yellowgreen;
+  width: calc((100% - 2rem) / 3);
+  height: 300px;
+  border-radius: 10px;
+  padding-inline: 1rem ;
+  transition: 1s;
+}
+
+@media (max-width:900px){
+  .cards__one-car{
+    width: calc((100% - 1rem) / 2);
+  }
+}
+
+@media (max-width:600px){
+  .cards__one-car{
+    width: 100%;
+  }
+}
